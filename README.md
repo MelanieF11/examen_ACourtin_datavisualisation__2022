@@ -7,7 +7,8 @@ Les volcans sont
 
 ## Présentation du jeu de données
 
-Le jeu de données utilisé afin d'étudier les volcans a été trouvé sur OpenDatSoft: [https://public.opendatasoft.com/explore/dataset/significant-volcanic-eruption-database/table/?flg=fr]
+Le jeu de données utilisé afin d'étudier les volcans a été trouvé sur OpenDatSoft: 
+>[url](https://public.opendatasoft.com/explore/dataset/significant-volcanic-eruption-database/table/?flg=fr)
 
 Ce jeu de données regroupe les "éruptions volcaniques significatives" qu'à connu notre monde. Pour être considérée comme une éruption significative, l'éruption doit répondre à différents critères:
 * causer la mort 
