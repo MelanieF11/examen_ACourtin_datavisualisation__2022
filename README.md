@@ -1,7 +1,7 @@
 # Les volcans et leurs éruptions significatives
 
 Les volcans fascinent depuis toujours. La mythologie greco-romaine leurs prêttaient le Dieu du feu comme visage et associaient chaque éruption à une manifestation divine. 
-A travers le temps, les scientifiques ont permit la compréhension du fonctionnement des volcans. Les éruptions peuvent être anticipées grâce aux observation. 
+A travers le temps, les scientifiques ont permit la compréhension du fonctionnement des volcans. Les éruptions peuvent être anticipées grâce aux observation. Cela ne retire pourtant rien au caractère impressionnant des éruptions. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CiHD5rDQdi8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -17,10 +17,10 @@ A travers le temps, les scientifiques ont permit la compréhension du fonctionne
 
 ## Présentation du jeu de données <a name="Jeudedonnees"></a>
 
-Le jeu de données utilisé afin d'étudier les volcans a été trouvé sur OpenDataSoft: 
+Le jeu de données utilisé afin d'étudier les volcans et plus précisement les "éruptions significatives" ce trouve sur OpenDataSoft: 
 >[Significant Volcanic Eruption Database](https://public.opendatasoft.com/explore/dataset/significant-volcanic-eruption-database/table/?flg=fr)
 
-Ce jeu de données regroupe les "éruptions volcaniques significatives" qu'à connu notre monde. Pour être considérée comme une éruption significative, l'éruption doit répondre à différents critères:
+Ce jeu de données regroupe les "éruptions volcaniques significatives" qu'à connu notre monde. Pour être considérée comme une éruption significative, l'éruption volcanique doit répondre à différents critères:
 * causer la mort 
 * créer des dommages financiers
 * Etre accompagner de tremblement de terre ou de tsunami
@@ -130,14 +130,14 @@ Voici des extraits des modifications apportées:
 
 ## Carte des éruptions significatives depuis -455<a name="carte"></a>
 
-Les éruptions volcaniques sont visibles tout autour du globe. Nous pouvons voir ici que des zones sont, tout de même, plus touchées que d'autres par des explosions significatives. 
+Les éruptions volcaniques sont visibles tout autour du globe. Nous pouvons voir ici que certaines zones sont, tout de même, plus touchées que d'autres par des explosions significatives. 
 
 <iframe src="https://public.opendatasoft.com/explore/embed/dataset/significant-volcanic-eruption-database/map/?flg=fr&location=2,11.9211,-14.23828&basemap=jawg.light&dataChart=eyJxdWVyaWVzIjpbeyJjb25maWciOnsiZGF0YXNldCI6InNpZ25pZmljYW50LXZvbGNhbmljLWVydXB0aW9uLWRhdGFiYXNlIiwib3B0aW9ucyI6eyJmbGciOiJmciIsImJhc2VtYXAiOiJqYXdnLmxpZ2h0IiwibG9jYXRpb24iOiIyLDMuMTg5MzQsLTIuMjMifX0sImNoYXJ0cyI6W3siYWxpZ25Nb250aCI6dHJ1ZSwidHlwZSI6ImNvbHVtbiIsImZ1bmMiOiJBVkciLCJ5QXhpcyI6InllYXIiLCJzY2llbnRpZmljRGlzcGxheSI6dHJ1ZSwiY29sb3IiOiIjRkY1MTVBIn1dLCJ4QXhpcyI6InRzdSIsIm1heHBvaW50cyI6NTAsInNvcnQiOiIifV0sInRpbWVzY2FsZSI6IiIsImRpc3BsYXlMZWdlbmQiOnRydWUsImFsaWduTW9udGgiOnRydWV9&static=false&datasetcard=false&scrollWheelZoom=false" width="800" height="600" frameborder="0"></iframe>
 source: >[Significant Volcanic Eruption Database](https://public.opendatasoft.com/explore/dataset/significant-volcanic-eruption-database/table/?flg=fr) 
 
 ## Disposition des observatoires volcaniques<a name="obsvolcan"></a>
 
-Pour obtenir toutes ces informations concernant les volcans, des observatoires volcaniques ont été créés. Leur objectif est d'étudier les sols, les volcans, leurs éruptions. 
+Pour obtenir toutes ces informations concernant les volcans, des observatoires volcaniques ont été créés. Leur objectif est d'étudier les sols, les volcans, leurs éruptions afin de pouvoir prévoir les éruptions à venir. 
 
 <iframe style="width: 80vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#%23Observatoire%20volcanique%20%C3%A0%20travers%20le%20monde%0A%23defaultView%3AMap%7B%22layer%22%3A%22%3FobservatoireLabel%22%7D%0ASELECT%20%3FobservatoireLabel%20%20%3FpaysLabel%20%3Flocalisation%0AWHERE%0A%7B%0A%3Fitem%20wdt%3AP3815%20%3Fobservatoire.%20%23trouve%20les%20observatoires%20volcaniques%0A%3Fitem%20wdt%3AP17%20%3Fpays.%20%23trouve%20les%20pays%0A%3Fitem%20wdt%3AP625%20%3Flocalisation%20%23trouve%20les%20coordonn%C3%A9es%20g%C3%A9ographiques%0A%20%20%20%20%20%20%0AOPTIONAL%20%7B%3Fitem%20wdt%3AP18%20%3Fpic%7D%20%23photo%20facultative%0A%20%20%20%20%20%20%20%20%20%0ASERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22fr%22%20%7D%0A%7D" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
 
@@ -190,7 +190,7 @@ SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en, 
 ```
 
 
-## Les différents types de volcan<a name="TypedeVolcan"></a>
+## Les différents types de volcans<a name="TypedeVolcan"></a>
 
 Des éruptions significatives ont eu lieu 835 fois depuis l'an -455. Il existe 17 types de volcan différents 
 parmis les volcans impliqués dans ces 835 éruptions. 
@@ -206,4 +206,4 @@ L’indice d’explosivité volcanique est une échelle utilisée pour comparer 
 
 ![IEV](https://user-images.githubusercontent.com/96179022/152225856-0e013b54-d86d-41ea-98cb-f158794f9f63.jpg)
 
-il est intéressant de voir que la majorité des éruptions ne possèdent pas un indice d'explosivité volcanique très élevé. Pour la plupart, l'indice d'explosivité est de 3. 
+il est intéressant de voir que la majorité des éruptions significatives ne possèdent pas un indice d'explosivité volcanique très élevé. Pour la plupart, l'indice d'explosivité est de 3. 
