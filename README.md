@@ -8,7 +8,7 @@ Les volcans sont
 ## Sommaire
 1. [Présentation du jeu de données](#Jeudedonnees)
 2. [Liste des volcans connus à ce jour](#listeVolcan)
-3. [Les différents types de volcan](#Type de Volcan)
+3. [Les différents types de volcan](#TypedeVolcan)
 4. [Répartition des volcans selon l'indice d'explosivité volcanique](#IEV)
 
 
@@ -16,8 +16,7 @@ Les volcans sont
 ## Présentation du jeu de données <a name="Jeudedonnees"></a>
 
 Le jeu de données utilisé afin d'étudier les volcans a été trouvé sur OpenDataSoft: 
->Significant Volcanic Eruption Database
-](https://public.opendatasoft.com/explore/dataset/significant-volcanic-eruption-database/table/?flg=fr)
+>[Significant Volcanic Eruption Database](https://public.opendatasoft.com/explore/dataset/significant-volcanic-eruption-database/table/?flg=fr)
 
 Ce jeu de données regroupe les "éruptions volcaniques significatives" qu'à connu notre monde. Pour être considérée comme une éruption significative, l'éruption doit répondre à différents critères:
 * causer la mort 
@@ -127,7 +126,14 @@ Voici des extraits des modifications apportées:
   }
 ```
 
-## Liste des volcans connus à ce jour <a name="listeVolcan"></a>
+
+## Carte des éruptions significatives depuis -455
+
+
+
+<iframe src="https://public.opendatasoft.com/explore/embed/dataset/significant-volcanic-eruption-database/map/?flg=fr&location=2,11.9211,-14.23828&basemap=jawg.light&dataChart=eyJxdWVyaWVzIjpbeyJjb25maWciOnsiZGF0YXNldCI6InNpZ25pZmljYW50LXZvbGNhbmljLWVydXB0aW9uLWRhdGFiYXNlIiwib3B0aW9ucyI6eyJmbGciOiJmciIsImJhc2VtYXAiOiJqYXdnLmxpZ2h0IiwibG9jYXRpb24iOiIyLDMuMTg5MzQsLTIuMjMifX0sImNoYXJ0cyI6W3siYWxpZ25Nb250aCI6dHJ1ZSwidHlwZSI6ImNvbHVtbiIsImZ1bmMiOiJBVkciLCJ5QXhpcyI6InllYXIiLCJzY2llbnRpZmljRGlzcGxheSI6dHJ1ZSwiY29sb3IiOiIjRkY1MTVBIn1dLCJ4QXhpcyI6InRzdSIsIm1heHBvaW50cyI6NTAsInNvcnQiOiIifV0sInRpbWVzY2FsZSI6IiIsImRpc3BsYXlMZWdlbmQiOnRydWUsImFsaWduTW9udGgiOnRydWV9&static=false&datasetcard=false&scrollWheelZoom=false" width="400" height="300" frameborder="0"></iframe>
+
+## Liste des volcans connus à ce jour<a name="listeVolcan"></a>
 
 Evidemment, toutes les éruptions ne sont pas significatives et par conséquents, tous les volcans ne sont pas répertoriés dans cette base de données. 
 Vous pouvez, ici, découvrir tous les volcans existants ainsi que certaines de leurs caractéristiques (hauteur, localisation).
@@ -160,7 +166,7 @@ SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en, 
 }
 ```
 
-## Les différents types de volcan<a name="Type de Volcan"></a>
+## Les différents types de volcan<a name="TypedeVolcan"></a>
 
 Des éruptions significatives ont eu lieu 835 fois depuis l'an -455. Il existe 17 types de volcan différents 
 parmis les volcans impliqués dans ces 835 éruptions. 
