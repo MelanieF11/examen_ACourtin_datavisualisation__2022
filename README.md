@@ -22,7 +22,6 @@ Le jeu de données utilisé afin d'étudier les volcans a été trouvé sur Open
 Ce jeu de données regroupe les "éruptions volcaniques significatives" qu'à connu notre monde. Pour être considérée comme une éruption significative, l'éruption doit répondre à différents critères:
 * causer la mort 
 * créer des dommages financiers
-* Avoir un Indice d'Explosivité Volcanique de 6 ou plus
 * Etre accompagner de tremblement de terre ou de tsunami
 
 La production de cette base de données a été faite par les Centres nationaux d'information sur l'environnement et la licence appartient au domaine public américain. 
