@@ -7,7 +7,7 @@ Les volcans sont
 
 ## Présentation du jeu de données
 
-Le jeu de données utilisé afin d'étudier les volcans a été trouvé sur OpenDatSoft:  https://public.opendatasoft.com/explore/dataset/significant-volcanic-eruption-database/table/?flg=fr
+Le jeu de données utilisé afin d'étudier les volcans a été trouvé sur OpenDatSoft: [https://public.opendatasoft.com/explore/dataset/significant-volcanic-eruption-database/table/?flg=fr]
 
 Ce jeu de données regroupe les "éruptions volcaniques significatives" qu'à connu notre monde. Pour être considérée comme une éruption significative, l'éruption doit répondre à différents critères:
 * causer la mort 
@@ -15,7 +15,107 @@ Ce jeu de données regroupe les "éruptions volcaniques significatives" qu'à co
 * Avoir un Indice d'Explosivité Volcanique de 6 ou plus
 * Etre accompagner de tremblement de terre ou de tsunami
 
+La production de cette base de données a été faite par les Centres nationaux d'information sur l'environnement et la licence appartient au domaine public américain. 
 
+Le jeu de données, avant d'être exploitable, a dû être travaillé. Ainsi, la traduction du jeu de données a été faite, ainsi que la création de la colonne "date de l'éruption". 
+
+Voici des extraits des modifications apportées: 
+
+```sparql
+[
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Year",
+    "newColumnName": "Année",
+    "description": "Rename column Year to Année"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Month",
+    "newColumnName": "Mois",
+    "description": "Rename column Month to Mois"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Day",
+    "newColumnName": "Jours",
+    "description": "Rename column Day to Jours"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Volcano Name",
+    "newColumnName": "Nom du volcan",
+    "description": "Rename column Volcano Name to Nom du volcan"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Volcano Type",
+    "newColumnName": "Type de volcan",
+    "description": "Rename column Volcano Type to Type de volcan"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Country",
+    "newColumnName": "Pays",
+    "description": "Rename column Country to Pays"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Coordinates",
+    "newColumnName": "Coordonées",
+    "description": "Rename column Coordinates to Coordonées"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Volcanic Explosivity Index",
+    "newColumnName": "Index d'explosivité volcanique",
+    "description": "Rename column Volcanic Explosivity Index to Index d'explosivité volcanique"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Status",
+    "newColumnName": "Statut",
+    "description": "Rename column Status to Statut"
+  },
+
+```
+```sparql
+ "mode": "row-based"
+    },
+    "baseColumnName": "Année",
+    "expression": "join ([coalesce(cells['Année'].value,'01'),coalesce(cells['Mois'].value,'01'),coalesce(cells['Jours'].value,'01')],'-')",
+    "onError": "keep-original",
+    "newColumnName": "Date de l'éruption",
+    "columnInsertIndex": 2,
+    "description": "Create column Date de l'éruption at index 2 based on column Année using expression join ([coalesce(cells['Année'].value,'01'),coalesce(cells['Mois'].value,'01'),coalesce(cells['Jours'].value,'01')],'-')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "Année",
+          "expression": "value",
+          "columnName": "Année",
+          "from": -200,
+          "to": 1300,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Date de l'éruption",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Date de l'éruption using expression value.toDate()"
+  }
+```
 ## Présentation des volcans
 
 
