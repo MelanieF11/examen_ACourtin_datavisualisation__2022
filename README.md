@@ -16,19 +16,6 @@ Ce jeu de données regroupe les "éruptions volcaniques significatives" qu'à co
 * Etre accompagner de tremblement de terre ou de tsunami
 
 
-
-
-
-> Répertoire servant pour l'examen final d'Antoine Courtin, datavisualisation
-
-Faire une liste
-* 1
-* 2
-* 3
-
-
-
-
 ## Présentation des volcans
 
 
