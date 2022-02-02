@@ -8,9 +8,10 @@ A travers le temps, les scientifiques ont permit la compréhension du fonctionne
 ## Sommaire
 1. [Présentation du jeu de données](#Jeudedonnees)
 2. [Carte des éruptions significatives depuis -455](#carte)
-3. [Liste des volcans connus à ce jour](#listeVolcan)
-4. [Les différents types de volcan](#TypedeVolcan)
-5. [Répartition des volcans selon l'indice d'explosivité volcanique](#IEV)
+3. [Disposition des observatoires volcaniques](#obsvolcan)
+4. [Liste des volcans connus à ce jour](#listeVolcan)
+5. [Les différents types de volcan](#TypedeVolcan)
+6. [Répartition des volcans selon l'indice d'explosivité volcanique](#IEV)
 
 
 
@@ -134,7 +135,7 @@ Les éruptions volcaniques sont visibles tout autour du globe. Nous pouvons voir
 <iframe src="https://public.opendatasoft.com/explore/embed/dataset/significant-volcanic-eruption-database/map/?flg=fr&location=2,11.9211,-14.23828&basemap=jawg.light&dataChart=eyJxdWVyaWVzIjpbeyJjb25maWciOnsiZGF0YXNldCI6InNpZ25pZmljYW50LXZvbGNhbmljLWVydXB0aW9uLWRhdGFiYXNlIiwib3B0aW9ucyI6eyJmbGciOiJmciIsImJhc2VtYXAiOiJqYXdnLmxpZ2h0IiwibG9jYXRpb24iOiIyLDMuMTg5MzQsLTIuMjMifX0sImNoYXJ0cyI6W3siYWxpZ25Nb250aCI6dHJ1ZSwidHlwZSI6ImNvbHVtbiIsImZ1bmMiOiJBVkciLCJ5QXhpcyI6InllYXIiLCJzY2llbnRpZmljRGlzcGxheSI6dHJ1ZSwiY29sb3IiOiIjRkY1MTVBIn1dLCJ4QXhpcyI6InRzdSIsIm1heHBvaW50cyI6NTAsInNvcnQiOiIifV0sInRpbWVzY2FsZSI6IiIsImRpc3BsYXlMZWdlbmQiOnRydWUsImFsaWduTW9udGgiOnRydWV9&static=false&datasetcard=false&scrollWheelZoom=false" width="800" height="600" frameborder="0"></iframe>
 source: >[Significant Volcanic Eruption Database](https://public.opendatasoft.com/explore/dataset/significant-volcanic-eruption-database/table/?flg=fr) 
 
-## Disposition des observatoires volcaniques
+## Disposition des observatoires volcaniques<a name="obsvolcan"></a>
 
 Pour obtenir toutes ces informations concernant les volcans, des observatoires volcaniques ont été créés. Leur objectif est d'étudier les sols, les volcans, leurs éruptions. 
 
