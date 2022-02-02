@@ -159,10 +159,12 @@ SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en, 
 
 ## Les différents types de volcan <a name="Type de Volcan"></a>
 
-Des éruptions significatives ont eu lieu 835 fois depuis l'an -141. Nous pouvons donc nous demander quel type de volcan est le plus susceptible de faire 
+Des éruptions significatives ont eu lieu 835 fois depuis l'an -455. Il existe 17 types de volcan différents 
+parmis les volcans impliqués dans ces 835 éruptions. 
 
 ![TypeDeVolcan](https://user-images.githubusercontent.com/96179022/152225965-8c45462e-3df6-48ef-beec-1badd78ab8cf.jpg)
 
-
+Nous voyons ici que les volcans les plus dangereux sont les stratovolcans (Volcan formé de couches stratifiées de laves ou de laves et de cendres selon le Larousse). 
 
 ![IEV](https://user-images.githubusercontent.com/96179022/152225856-0e013b54-d86d-41ea-98cb-f158794f9f63.jpg)
+
