@@ -1,4 +1,4 @@
-# Les volcans et tsunamis depuis toujours
+# Les volcans depuis toujours
 
 ### Titre 2
 
