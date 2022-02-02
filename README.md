@@ -1,7 +1,7 @@
 # Les volcans et leurs éruptions significatives
 
-Les volcans sont 
-
+Les volcans fascinent depuis toujours. La mythologie greco-romaine leurs prêttaient le Dieu du feu comme visage et associaient chaque éruption à une manifestation divine. 
+A travers le temps, les scientifiques ont permit la compréhension du fonctionnement des volcans. Les éruptions peuvent être anticipées grâce aux observation. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CiHD5rDQdi8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
