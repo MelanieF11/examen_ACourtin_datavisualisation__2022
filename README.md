@@ -33,7 +33,7 @@ SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en, 
 }
 ```
 
-#Présentation des volcans
+## Présentation des volcans
 
 Voici la galerie d'image permettant de voir tous les volcans répertoriés sur Wikidata:
 
