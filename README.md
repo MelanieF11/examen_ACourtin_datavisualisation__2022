@@ -1,11 +1,19 @@
-# Les volcans depuis l'an 199 
+# Les volcans et leurs éruptions depuis l'an 199 
 
-
+Les volcans sont 
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CiHD5rDQdi8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Présentation du jeu de données
+
+Le jeu de données utilisé afin d'étudier les volcans a été trouvé sur OpenDatSoft:  https://public.opendatasoft.com/explore/dataset/significant-volcanic-eruption-database/table/?flg=fr
+
+Ce jeu de données regroupe les "éruptions volcaniques significatives" qu'à connu notre monde. Pour être considérée comme une éruption significative, l'éruption doit répondre à différents critères:
+* causer la mort 
+* créer des dommages financiers
+* Avoir un Indice d'Explosivité Volcanique de 6 ou plus
+* Etre accompagner de tremblement de terre ou de tsunami
 
 
 
