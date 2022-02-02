@@ -142,6 +142,7 @@ source: >[Significant Volcanic Eruption Database](https://public.opendatasoft.co
 Pour obtenir toutes ces informations concernant les volcans, des observatoires volcaniques ont été créés. Leur objectif est d'étudier les sols, les volcans, leurs éruptions afin de pouvoir prévoir les éruptions à venir. 
 
 <iframe style="width: 80vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#%23Observatoire%20volcanique%20%C3%A0%20travers%20le%20monde%0A%23defaultView%3AMap%7B%22layer%22%3A%22%3FobservatoireLabel%22%7D%0ASELECT%20%3FobservatoireLabel%20%20%3FpaysLabel%20%3Flocalisation%0AWHERE%0A%7B%0A%3Fitem%20wdt%3AP3815%20%3Fobservatoire.%20%23trouve%20les%20observatoires%20volcaniques%0A%3Fitem%20wdt%3AP17%20%3Fpays.%20%23trouve%20les%20pays%0A%3Fitem%20wdt%3AP625%20%3Flocalisation%20%23trouve%20les%20coordonn%C3%A9es%20g%C3%A9ographiques%0A%20%20%20%20%20%20%0AOPTIONAL%20%7B%3Fitem%20wdt%3AP18%20%3Fpic%7D%20%23photo%20facultative%0A%20%20%20%20%20%20%20%20%20%0ASERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22fr%22%20%7D%0A%7D" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
+source:wikidata
 
 ```sparql
 #Observatoire volcanique à travers le monde
@@ -165,6 +166,7 @@ Evidemment, toutes les éruptions ne sont pas significatives et par conséquents
 Vous pouvez, ici, découvrir tous les volcans existants ainsi que certaines de leurs caractéristiques (hauteur, localisation, observatoire volcanique en charge de la surveillance du volcan).
 
 <iframe style="width: 80vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#%23%20Volcans%20%C3%A0%20travers%20le%20monde%0A%23defaultView%3AImageGrid%0ASELECT%20%3Fitem%20%3FitemLabel%20%3Fpic%20%3FlocalisationLabel%20%3Fcoordonnees%20%3Ftaille%20%3Fitemdescription%20%3FobservatoireLabel%0AWHERE%0A%7B%0A%3Fitem%20wdt%3AP31%20wd%3AQ8072%20.%0A%3Fitem%20wdt%3AP18%20%3Fpic%20.%0A%3Fitem%20wdt%3AP17%20%3Flocalisation%20.%0A%3Flocalisation%20wdt%3AP625%20%3Fcoordonnees%20.%0A%3Fitem%20schema%3Adescription%20%3Fitemdescription.%0A%20%20FILTER%28LANG%28%3Fitemdescription%29%20%3D%20%22fr%22%29%0A%3Fitem%20wdt%3AP3815%20%3Fobservatoire%0A%0AOPTIONAL%20%7B%3Fitem%20wdt%3AP2044%20%3Ftaille%7D%0A%20%20%20%20%20%20%20%20%20%7B%3Fitem%20wdt%3AP18%20%3Fpic%7D%0A%20%20%20%20%0A%0ASERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%2C%20fr%22%20%7D%0A%7D%0A%0A" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
+source:wikidata
 
 
 Pour visualiser cette galerie d'image, nous avons utiliser wikidata et son système de requête. La requête suivante a été utilisée: 
@@ -200,6 +202,7 @@ parmis les volcans impliqués dans ces 835 éruptions.
 ![TypeDeVolcan](https://user-images.githubusercontent.com/96179022/152225965-8c45462e-3df6-48ef-beec-1badd78ab8cf.jpg)
 
 Nous voyons ici que les volcans les plus dangereux sont les stratovolcans (Volcan formé de couches stratifiées de laves ou de laves et de cendres selon le Larousse). 
+source: rawgraph
 
 
 ## Répartition des volcans selon l'indice d'explosivité volcanique<a name="IEV"></a>
@@ -209,3 +212,5 @@ L’indice d’explosivité volcanique est une échelle utilisée pour comparer 
 ![IEV](https://user-images.githubusercontent.com/96179022/152225856-0e013b54-d86d-41ea-98cb-f158794f9f63.jpg)
 
 il est intéressant de voir que la majorité des éruptions significatives ne possèdent pas un indice d'explosivité volcanique très élevé. Pour la plupart, l'indice d'explosivité est de 3. 
+source: rawgraph
+
