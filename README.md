@@ -20,6 +20,8 @@ A travers le temps, les scientifiques ont permit la compréhension du fonctionne
 Le jeu de données utilisé afin d'étudier les volcans et plus précisement les "éruptions significatives" ce trouve sur OpenDataSoft: 
 >[Significant Volcanic Eruption Database](https://public.opendatasoft.com/explore/dataset/significant-volcanic-eruption-database/table/?flg=fr)
 
+<iframe src="https://public.opendatasoft.com/explore/embed/dataset/significant-volcanic-eruption-database/table/?flg=fr&static=false&datasetcard=false" width="400" height="300" frameborder="0"></iframe>
+
 Ce jeu de données regroupe les "éruptions volcaniques significatives" qu'à connu notre monde. Pour être considérée comme une éruption significative, l'éruption volcanique doit répondre à différents critères:
 * causer la mort 
 * créer des dommages financiers
