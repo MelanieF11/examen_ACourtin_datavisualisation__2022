@@ -150,5 +150,5 @@ SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en, 
 }
 ```
 
-
+![TypeDeVolcan](https://user-images.githubusercontent.com/96179022/152225965-8c45462e-3df6-48ef-beec-1badd78ab8cf.jpg)
 ![IEV](https://user-images.githubusercontent.com/96179022/152225856-0e013b54-d86d-41ea-98cb-f158794f9f63.jpg)
