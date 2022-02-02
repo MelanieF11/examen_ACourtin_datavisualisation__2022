@@ -7,9 +7,10 @@ Les volcans sont
 
 ## Sommaire
 1. [Présentation du jeu de données](#Jeudedonnees)
-2. [Liste des volcans connus à ce jour](#listeVolcan)
-3. [Les différents types de volcan](#TypedeVolcan)
-4. [Répartition des volcans selon l'indice d'explosivité volcanique](#IEV)
+2. [Carte des éruptions significatives depuis -455]<a name="carte"></a>
+3. [Liste des volcans connus à ce jour](#listeVolcan)
+4. [Les différents types de volcan](#TypedeVolcan)
+5. [Répartition des volcans selon l'indice d'explosivité volcanique](#IEV)
 
 
 
@@ -127,9 +128,9 @@ Voici des extraits des modifications apportées:
 ```
 
 
-## Carte des éruptions significatives depuis -455
+## Carte des éruptions significatives depuis -455<a name="carte"></a>
 
-
+Les éruptions volcaniques sont visibles tout autour du globe. Nous pouvons voir ici que des zones sont, tout de même, plus touchées que d'autres par des explosions significatives. 
 
 <iframe src="https://public.opendatasoft.com/explore/embed/dataset/significant-volcanic-eruption-database/map/?flg=fr&location=2,11.9211,-14.23828&basemap=jawg.light&dataChart=eyJxdWVyaWVzIjpbeyJjb25maWciOnsiZGF0YXNldCI6InNpZ25pZmljYW50LXZvbGNhbmljLWVydXB0aW9uLWRhdGFiYXNlIiwib3B0aW9ucyI6eyJmbGciOiJmciIsImJhc2VtYXAiOiJqYXdnLmxpZ2h0IiwibG9jYXRpb24iOiIyLDMuMTg5MzQsLTIuMjMifX0sImNoYXJ0cyI6W3siYWxpZ25Nb250aCI6dHJ1ZSwidHlwZSI6ImNvbHVtbiIsImZ1bmMiOiJBVkciLCJ5QXhpcyI6InllYXIiLCJzY2llbnRpZmljRGlzcGxheSI6dHJ1ZSwiY29sb3IiOiIjRkY1MTVBIn1dLCJ4QXhpcyI6InRzdSIsIm1heHBvaW50cyI6NTAsInNvcnQiOiIifV0sInRpbWVzY2FsZSI6IiIsImRpc3BsYXlMZWdlbmQiOnRydWUsImFsaWduTW9udGgiOnRydWV9&static=false&datasetcard=false&scrollWheelZoom=false" width="400" height="300" frameborder="0"></iframe>
 
