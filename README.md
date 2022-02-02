@@ -1,4 +1,4 @@
-# Les volcans et leurs éruptions depuis l'an 199 
+# Les volcans et leurs éruptions significatives
 
 Les volcans sont 
 
@@ -7,13 +7,13 @@ Les volcans sont
 
 ## Sommaire
 1. [Présentation du jeu de données](#Jeudedonnees)
-2. [Some paragraph](#paragraph1)
+2. [Liste des volcans connus à ce jour](#listeVolcan)
 
 
 ## Présentation du jeu de données <a name="Jeudedonnees"></a>
 
 Le jeu de données utilisé afin d'étudier les volcans a été trouvé sur OpenDatSoft: 
->[Significant Volcanic Eruption Database)
+>[Significant Volcanic Eruption Database]
 ](https://public.opendatasoft.com/explore/dataset/significant-volcanic-eruption-database/table/?flg=fr)
 
 Ce jeu de données regroupe les "éruptions volcaniques significatives" qu'à connu notre monde. Pour être considérée comme une éruption significative, l'éruption doit répondre à différents critères:
@@ -123,11 +123,11 @@ Voici des extraits des modifications apportées:
     "description": "Text transform on cells in column Date de l'éruption using expression value.toDate()"
   }
 ```
-## Présentation des volcans
 
+## Liste des volcans connus à ce jour <a name="listeVolcan"></a>
 
-
-Voici la galerie d'image permettant de voir tous les volcans répertoriés sur Wikidata:
+Evidemment, toutes les éruptions ne sont pas significatives et par conséquents, tous les volcans ne sont pas répertoriés dans cette base de données. 
+Vous pouvez, ici, découvrir tous les volcans existants ainsi que certaines de leurs caractéristiques (hauteur, localisation).
 
 <iframe style="width: 80vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#%23%20Volcans%20%C3%A0%20travers%20le%20monde%0A%23defaultView%3AImageGrid%0ASELECT%20%3Fitem%20%3FitemLabel%20%3Fpic%20%3FlocalisationLabel%20%3Fcoordonnees%20%3Ftaille%20%3Fitemdescription%20%3FobservatoireLabel%0AWHERE%0A%7B%0A%3Fitem%20wdt%3AP31%20wd%3AQ8072%20.%0A%3Fitem%20wdt%3AP18%20%3Fpic%20.%0A%3Fitem%20wdt%3AP17%20%3Flocalisation%20.%0A%3Flocalisation%20wdt%3AP625%20%3Fcoordonnees%20.%0A%3Fitem%20schema%3Adescription%20%3Fitemdescription.%0A%20%20FILTER%28LANG%28%3Fitemdescription%29%20%3D%20%22fr%22%29%0A%3Fitem%20wdt%3AP3815%20%3Fobservatoire%0A%0AOPTIONAL%20%7B%3Fitem%20wdt%3AP2044%20%3Ftaille%7D%0A%20%20%20%20%20%20%20%20%20%7B%3Fitem%20wdt%3AP18%20%3Fpic%7D%0A%20%20%20%20%0A%0ASERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%2C%20fr%22%20%7D%0A%7D%0A%0A" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
 
@@ -157,5 +157,12 @@ SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en, 
 }
 ```
 
+## Les différents types de volcan <a name="Type de Volcan"></a>
+
+Des éruptions significatives ont eu lieu 835 fois depuis l'an -141. Nous pouvons donc nous demander quel type de volcan est le plus susceptible de faire 
+
 ![TypeDeVolcan](https://user-images.githubusercontent.com/96179022/152225965-8c45462e-3df6-48ef-beec-1badd78ab8cf.jpg)
+
+
+
 ![IEV](https://user-images.githubusercontent.com/96179022/152225856-0e013b54-d86d-41ea-98cb-f158794f9f63.jpg)
