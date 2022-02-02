@@ -7,7 +7,7 @@ Les volcans sont
 
 ## Sommaire
 1. [Présentation du jeu de données](#Jeudedonnees)
-2. [Carte des éruptions significatives depuis -455]<a name="carte"></a>
+2. [Carte des éruptions significatives depuis -455](#carte)
 3. [Liste des volcans connus à ce jour](#listeVolcan)
 4. [Les différents types de volcan](#TypedeVolcan)
 5. [Répartition des volcans selon l'indice d'explosivité volcanique](#IEV)
@@ -167,6 +167,7 @@ SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en, 
 }
 ```
 
+
 ## Les différents types de volcan<a name="TypedeVolcan"></a>
 
 Des éruptions significatives ont eu lieu 835 fois depuis l'an -455. Il existe 17 types de volcan différents 
@@ -175,6 +176,7 @@ parmis les volcans impliqués dans ces 835 éruptions.
 ![TypeDeVolcan](https://user-images.githubusercontent.com/96179022/152225965-8c45462e-3df6-48ef-beec-1badd78ab8cf.jpg)
 
 Nous voyons ici que les volcans les plus dangereux sont les stratovolcans (Volcan formé de couches stratifiées de laves ou de laves et de cendres selon le Larousse). 
+
 
 ## Répartition des volcans selon l'indice d'explosivité volcanique<a name="IEV"></a>
 
