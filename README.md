@@ -132,12 +132,29 @@ Voici des extraits des modifications apportées:
 Les éruptions volcaniques sont visibles tout autour du globe. Nous pouvons voir ici que des zones sont, tout de même, plus touchées que d'autres par des explosions significatives. 
 
 <iframe src="https://public.opendatasoft.com/explore/embed/dataset/significant-volcanic-eruption-database/map/?flg=fr&location=2,11.9211,-14.23828&basemap=jawg.light&dataChart=eyJxdWVyaWVzIjpbeyJjb25maWciOnsiZGF0YXNldCI6InNpZ25pZmljYW50LXZvbGNhbmljLWVydXB0aW9uLWRhdGFiYXNlIiwib3B0aW9ucyI6eyJmbGciOiJmciIsImJhc2VtYXAiOiJqYXdnLmxpZ2h0IiwibG9jYXRpb24iOiIyLDMuMTg5MzQsLTIuMjMifX0sImNoYXJ0cyI6W3siYWxpZ25Nb250aCI6dHJ1ZSwidHlwZSI6ImNvbHVtbiIsImZ1bmMiOiJBVkciLCJ5QXhpcyI6InllYXIiLCJzY2llbnRpZmljRGlzcGxheSI6dHJ1ZSwiY29sb3IiOiIjRkY1MTVBIn1dLCJ4QXhpcyI6InRzdSIsIm1heHBvaW50cyI6NTAsInNvcnQiOiIifV0sInRpbWVzY2FsZSI6IiIsImRpc3BsYXlMZWdlbmQiOnRydWUsImFsaWduTW9udGgiOnRydWV9&static=false&datasetcard=false&scrollWheelZoom=false" width="800" height="600" frameborder="0"></iframe>
+source: >[Significant Volcanic Eruption Database](https://public.opendatasoft.com/explore/dataset/significant-volcanic-eruption-database/table/?flg=fr) 
 
 ## Disposition des observatoires volcaniques
 
 Pour obtenir toutes ces informations concernant les volcans, des observatoires volcaniques ont été créés. Leur objectif est d'étudier les sols, les volcans, leurs éruptions. 
 
 <iframe style="width: 80vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#%23Observatoire%20volcanique%20%C3%A0%20travers%20le%20monde%0A%23defaultView%3AMap%7B%22layer%22%3A%22%3FobservatoireLabel%22%7D%0ASELECT%20%3FobservatoireLabel%20%20%3FpaysLabel%20%3Flocalisation%0AWHERE%0A%7B%0A%3Fitem%20wdt%3AP3815%20%3Fobservatoire.%0A%3Fitem%20wdt%3AP17%20%3Fpays.%0A%3Fitem%20wdt%3AP625%20%3Flocalisation%0A%20%20%20%20%20%20%0AOPTIONAL%20%7B%3Fitem%20wdt%3AP18%20%3Fpic%7D%0A%20%20%20%20%20%20%20%20%20%0ASERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22fr%22%20%7D%0A%7D" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
+
+```sparql
+#Observatoire volcanique à travers le monde
+#defaultView:Map{"layer":"?observatoireLabel"}
+SELECT ?observatoireLabel  ?paysLabel ?localisation
+WHERE
+{
+?item wdt:P3815 ?observatoire. #trouve les observatoires volcaniques
+?item wdt:P17 ?pays. #trouve les pays
+?item wdt:P625 ?localisation #trouve les coordonnées géographiques
+      
+OPTIONAL {?item wdt:P18 ?pic} #photo facultative
+         
+SERVICE wikibase:label { bd:serviceParam wikibase:language "fr" }
+}
+```
 
 ## Liste des volcans connus à ce jour<a name="listeVolcan"></a>
 
