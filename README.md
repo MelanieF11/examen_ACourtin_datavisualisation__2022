@@ -149,3 +149,6 @@ OPTIONAL {?item wdt:P2044 ?taille}
 SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en, fr" }
 }
 ```
+
+
+![IEV](https://user-images.githubusercontent.com/96179022/152225856-0e013b54-d86d-41ea-98cb-f158794f9f63.jpg)
