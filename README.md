@@ -8,12 +8,14 @@ Les volcans sont
 ## Sommaire
 1. [Présentation du jeu de données](#Jeudedonnees)
 2. [Liste des volcans connus à ce jour](#listeVolcan)
+3. [Les différents types de volcan] (#Type de Volcan)
+
 
 
 ## Présentation du jeu de données <a name="Jeudedonnees"></a>
 
-Le jeu de données utilisé afin d'étudier les volcans a été trouvé sur OpenDatSoft: 
->[Significant Volcanic Eruption Database]
+Le jeu de données utilisé afin d'étudier les volcans a été trouvé sur OpenDataSoft: 
+>Significant Volcanic Eruption Database
 ](https://public.opendatasoft.com/explore/dataset/significant-volcanic-eruption-database/table/?flg=fr)
 
 Ce jeu de données regroupe les "éruptions volcaniques significatives" qu'à connu notre monde. Pour être considérée comme une éruption significative, l'éruption doit répondre à différents critères:
@@ -166,5 +168,10 @@ parmis les volcans impliqués dans ces 835 éruptions.
 
 Nous voyons ici que les volcans les plus dangereux sont les stratovolcans (Volcan formé de couches stratifiées de laves ou de laves et de cendres selon le Larousse). 
 
+## Répartition des volcans selon l'indice d'explosivité volcanique
+
+L’indice d’explosivité volcanique est une échelle utilisée pour comparer les éruptions volcaniques entre elles. Il a été mis au point en 1982 par Chris Newhall de l’USGS et Stephen Self de l’Université d’Hawaii.
+
 ![IEV](https://user-images.githubusercontent.com/96179022/152225856-0e013b54-d86d-41ea-98cb-f158794f9f63.jpg)
 
+il est intéressant de voir que la majorité des éruptions ne possèdent pas un indice d'explosivité volcanique très élevé. Pour la plupart, l'indice d'explosivité est de 3. 
