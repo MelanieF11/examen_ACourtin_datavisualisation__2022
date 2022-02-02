@@ -138,7 +138,7 @@ source: >[Significant Volcanic Eruption Database](https://public.opendatasoft.co
 
 Pour obtenir toutes ces informations concernant les volcans, des observatoires volcaniques ont été créés. Leur objectif est d'étudier les sols, les volcans, leurs éruptions. 
 
-<iframe style="width: 80vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#%23Observatoire%20volcanique%20%C3%A0%20travers%20le%20monde%0A%23defaultView%3AMap%7B%22layer%22%3A%22%3FobservatoireLabel%22%7D%0ASELECT%20%3FobservatoireLabel%20%20%3FpaysLabel%20%3Flocalisation%0AWHERE%0A%7B%0A%3Fitem%20wdt%3AP3815%20%3Fobservatoire.%0A%3Fitem%20wdt%3AP17%20%3Fpays.%0A%3Fitem%20wdt%3AP625%20%3Flocalisation%0A%20%20%20%20%20%20%0AOPTIONAL%20%7B%3Fitem%20wdt%3AP18%20%3Fpic%7D%0A%20%20%20%20%20%20%20%20%20%0ASERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22fr%22%20%7D%0A%7D" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
+<iframe style="width: 80vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#%23Observatoire%20volcanique%20%C3%A0%20travers%20le%20monde%0A%23defaultView%3AMap%7B%22layer%22%3A%22%3FobservatoireLabel%22%7D%0ASELECT%20%3FobservatoireLabel%20%20%3FpaysLabel%20%3Flocalisation%0AWHERE%0A%7B%0A%3Fitem%20wdt%3AP3815%20%3Fobservatoire.%20%23trouve%20les%20observatoires%20volcaniques%0A%3Fitem%20wdt%3AP17%20%3Fpays.%20%23trouve%20les%20pays%0A%3Fitem%20wdt%3AP625%20%3Flocalisation%20%23trouve%20les%20coordonn%C3%A9es%20g%C3%A9ographiques%0A%20%20%20%20%20%20%0AOPTIONAL%20%7B%3Fitem%20wdt%3AP18%20%3Fpic%7D%20%23photo%20facultative%0A%20%20%20%20%20%20%20%20%20%0ASERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22fr%22%20%7D%0A%7D" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
 
 ```sparql
 #Observatoire volcanique à travers le monde
@@ -173,16 +173,15 @@ Pour visualiser cette galerie d'image, nous avons utiliser wikidata et son syst�
 SELECT ?item ?itemLabel ?pic ?localisationLabel ?coordonnees ?taille ?itemdescription ?observatoireLabel
 WHERE
 {
-?item wdt:P31 wd:Q8072 .
-?item wdt:P18 ?pic .
-?item wdt:P17 ?localisation .
-?localisation wdt:P625 ?coordonnees .
-?item schema:description ?itemdescription.
+?item wdt:P31 wd:Q8072 . #trouve les volcans 
+?item wdt:P17 ?localisation . #trouve les pays
+?localisation wdt:P625 ?coordonnees . #trouve les coordonnées géographiques
+?item schema:description ?itemdescription. #trouve la description
   FILTER(LANG(?itemdescription) = "fr")
-?item wdt:P3815 ?observatoire
+?item wdt:P3815 ?observatoire #trouve les observatoires
 
-OPTIONAL {?item wdt:P2044 ?taille}
-         {?item wdt:P18 ?pic}
+OPTIONAL {?item wdt:P2044 ?taille} #trouve la taille du volcan
+         {?item wdt:P18 ?pic} #trouve la photo du volcan
     
 
 SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en, fr" }
